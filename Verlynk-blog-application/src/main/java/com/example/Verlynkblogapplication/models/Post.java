@@ -2,6 +2,7 @@ package com.example.Verlynkblogapplication.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -22,4 +23,8 @@ public class Post {
 
     private LocalDateTime createdAt;
 
+    @NonNull
+    @ManyToOne
+    @JoinColumn(name ="account_id", referencedColumnName = "id",nullable = false)
+    private Account account;
 }
