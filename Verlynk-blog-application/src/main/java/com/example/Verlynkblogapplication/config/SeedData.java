@@ -66,13 +66,13 @@ public class SeedData implements CommandLineRunner {
 
 
             Post post1 = new Post();
-            post1.setTitle("title of post 1");
-            post1.setBody("This is the body of post 1");
+            post1.setTitle("Secondhand Time");
+            post1.setBody("The Belarusian Nobel laureate recorded thousands of hours of testimony from ordinary people to create this oral history of the Soviet Union and its end. Writers, waiters, doctors, soldiers, former Kremlin apparatchiks, gulag survivors: all are given space to tell their stories, share their anger and betrayal, and voice their worries about the transition to capitalism. An unforgettable book, which is both an act of catharsis and a profound demonstration of empathy.");
             post1.setAccount(account1);
 
             Post post2 = new Post();
-            post2.setTitle("title of post 2");
-            post2.setBody("This is the body of post 2");
+            post2.setTitle("My Brilliant Friend");
+            post2.setBody("Powerfully intimate and unashamedly domestic, the first in Ferrante’s Neapolitan series established her as a literary sensation. This and the three novels that followed documented the ways misogyny and violence could determine lives, as well as the history of Italy in the late 20th century.");
             post2.setAccount(account2);
 
             postService.save(post1);

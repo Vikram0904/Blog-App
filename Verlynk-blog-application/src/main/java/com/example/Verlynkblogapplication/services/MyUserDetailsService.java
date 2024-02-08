@@ -8,7 +8,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Component;
+import org.springframework .stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class MyUserDetailsService implements UserDetailsService {
  @Autowired
-    private final AccountService accountService;
+ private AccountService accountService;
 
  @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException{
