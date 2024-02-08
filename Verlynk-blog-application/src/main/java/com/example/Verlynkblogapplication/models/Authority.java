@@ -9,13 +9,23 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
-public class Authority {
+public class Authority implements Serializable {
 
     @Id
     @Column(length = 16)
-    String name;
+    private String name;
+
+    @Override
+    public String toString(){
+        return "Authority{" +
+                "name='" + name + "'" +
+                "}";
+    }
+
 }
