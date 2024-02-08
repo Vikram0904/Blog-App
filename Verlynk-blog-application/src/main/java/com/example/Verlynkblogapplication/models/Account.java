@@ -23,7 +23,7 @@ public class Account {
 
     private String lastName;
 
-    private String Email;
+    private String email;
 
     @OneToMany(mappedBy ="account")
     private List<Post> posts;
