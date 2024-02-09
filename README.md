@@ -85,5 +85,44 @@ This project is licensed under the [MIT License](LICENSE).
 2.Maven build tool installed on your system.
 
 3.MySQL Workbench
-```
+
+## API Reference
+
+Home Page
+ http://localhost:8080/
+ 
+Create New Post
+http://localhost:8080/posts/new
+
+View Post1
+http://localhost:8080/posts/1
+
+View Post2
+http://localhost:8080/posts/2
+
+User Register
+ http://localhost:8080/register
+ 
+Login
+  http://localhost:8080/login
+  
+Update
+http://localhost:8080/posts/1/edit
+
+
+## Sample Valid JSON Request Bodys
+
+ Register --> /register
+{
+"firstName": "Leanne",
+"lastName": "Graham",
+"email": "leanne.graham@gmail.com",
+"password": "password"
+}
+
+Login --> /login
+{
+"email": "leanne.graham@gmail.com",
+"password": "password"
+}
     
